@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora IMC</title>
+
+    <link rel="stylesheet" href="./imc.css">
+    <script src="./imc.js" defer></script>
+</head>
+<body>
+
+    <main class="calculadora">
+
+        <div class="logo">
+            <img src="./Logo ZETA FIT com Velocímetro Esportivo.png"
+            alt="Logotipo IMC">
+            
+        </div>
+
+        <h2>Calculadora IMC</h2>
+
+        <p class="descricao">
+            Digite seu peso e altura:
+        </p>
+
+        <form id="formulario">
+
+            <input
+                type="number"
+                id="peso"
+                placeholder="Peso (ex: 70.5)"
+                step="any"
+                min="0"
+                required
+            >
+
+            <input
+                type="number"
+                id="altura"
+                placeholder="Altura (ex: 1.75)"
+                step="any"
+                min="0"
+                required
+            >
+
+            <button type="submit">Calcular</button>
+
+        </form>
+
+        <div id="resultado" aria-live="polite"></div>
+
+    </main>
+
+    <footer>
+        Desenvolvido por: João Victor Cavalcante Pinto
+    </footer>
+
+</body>
+</html>
